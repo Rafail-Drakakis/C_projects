@@ -1,3 +1,4 @@
 chmod u+x test.sh 
 chmod u+x <file_name>
 sh test.sh <executable_name> ./ #if there are in the same directory
+sh test.sh <executable_name> tests #if there is a test directory
