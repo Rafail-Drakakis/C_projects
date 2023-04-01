@@ -3,7 +3,7 @@ CFLAGS = -Wall -ansi -pedantic -g
 
 translate:
 	$(CC) $(CFLAGS) translate.c -o $@
-
+	
 clean:
 	-rm -f translate
 
