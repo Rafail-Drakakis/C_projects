@@ -1,12 +1,34 @@
-CC = gcc
-CFLAGS = -Wall -ansi -pedantic -g
+# Compiler to use
+CC=gcc
 
-translate:
-	$(CC) $(CFLAGS) translate.c -o $@
-	
+# Compiler flags
+CFLAGS=-Wall -ansi -pedantic
+
+# Executable name
+EXEC=translate
+
+# Source files
+SRCS=translate.c
+
+# Object files
+OBJS=$(SRCS:.c=.o)
+
+# Default target
+all: $(EXEC)
+	rm -f $(OBJS)
+
+# Link object files to create executable
+$(EXEC): $(OBJS)
+	$(CC) $(CFLAGS) $(OBJS) -o $(EXEC)
+
+# Compile source files to object files
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@
+
+# Clean up object files and executable
 clean:
-	-rm -f translate
+	rm -f $(OBJS) $(EXEC)
 
+# Run tests
 test:
-	./translate < ./tests/test1.7 > test.1
-	./translate < ./tests/test2.7 > test.2
+	./test.sh $(EXEC) tests
