@@ -48,9 +48,9 @@ The program will output the results of the check, indicating whether each row, c
 Testing
 The magic_square program comes with a test script that can be used to test the functionality of the program. The script can be found in the test.sh file in the project directory.
 
-To run the test script, open a terminal window and navigate to the project directory. Then, run the following command:
-./test.sh magic_square tests
+To run the script, open a terminal window and navigate to the project directory. Then, run the following command:
+make.
 The script will run several test cases to ensure that the program is functioning correctly. The output of the test script will indicate whether each test passed or failed.
 
-Conclusion
-The magic_square program is a useful tool for generating and checking magic squares. Whether you are a mathematician, a puzzle enthusiast, or simply someone who enjoys exploring interesting mathematical concepts, the magic_square program is a great tool to have in your toolkit.
+License
+This project is licensed under the MIT License.
