@@ -15,6 +15,7 @@ OBJS=$(SRCS:.c=.o)
 
 # Default target
 all: $(EXEC)
+	./test.sh $(EXEC) tests  # Run tests
 	rm -f $(OBJS)
 
 # Link object files to create executable
@@ -28,7 +29,3 @@ $(EXEC): $(OBJS)
 # Clean up object files and executable
 clean:
 	rm -f $(OBJS) $(EXEC)
-
-# Run tests
-test:
-	./test.sh $(EXEC) tests
