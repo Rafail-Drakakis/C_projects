@@ -2,11 +2,11 @@
 
 ## Description
 
-The translate.c program is designed to convert characters from iso8859-1 (latin characters) to their corresponding equivalents in iso8859-7 (Greek characters). It includes a dictionary of character mappings and applies conversion rules based on specific conditions.
+The translate.c program is designed to convert characters from  iso8859-7 (Greek characters) to their corresponding equivalents in iso8859-1 (latin characters). It includes a dictionary of character mappings and applies conversion rules based on specific conditions.
 
 ## Features
 
-- Converts characters from iso8859-1 (latin characters) to their corresponding equivalents in iso8859-7 (Greek characters).
+- Converts characters from iso8859-7 (Greek characters) to their corresponding equivalents in iso8859-1 (latin characters).
 - Handles special cases and applies specific rules for character conversions.
 - Supports both uppercase and lowercase characters.
 
