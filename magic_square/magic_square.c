@@ -3,6 +3,24 @@
 #include<stdlib.h>
 #define MAXN 100
 
+/**
+ * The above code is a C program that checks if a given square matrix is a magic square or generates a
+ * magic square of a given size.
+ * 
+ * @param N The parameter N represents the size of the square matrix or magic square. It indicates the
+ * number of rows and columns in the matrix.
+ * @param array The array parameter is a 2D array of integers with dimensions MAXN x MAXN. It
+ * represents the square matrix.
+ */
+
+/**
+ * The function `checkMagicSquare` checks if a given square matrix is a magic square by comparing the
+ * sums of its rows, columns, and diagonals, and checking if all the elements are unique.
+ * 
+ * @param N The parameter N represents the size of the square matrix. It indicates the number of rows
+ * and columns in the matrix.
+ * @param array The array parameter is a 2D array of integers, with dimensions MAXN x MAXN.
+ */
 void checkMagicSquare(int N, int array[MAXN][MAXN]) {
     int sum, sum_check, i, j;
     sum_check = (N * (N * N + 1)) / 2;
@@ -97,6 +115,12 @@ void checkMagicSquare(int N, int array[MAXN][MAXN]) {
     }
 }
 
+/**
+ * The createMagicSquare function generates a magic square of size N and prints it.
+ * 
+ * @param N The parameter N represents the size of the magic square. It determines the number of rows
+ * and columns in the square.
+ */
 void createMagicSquare(int N) {
     int array[MAXN][MAXN];
     int i, j, k;
@@ -145,6 +169,18 @@ void createMagicSquare(int N) {
     }
 }
 
+/**
+ * The main function takes command line arguments and calls either the checkMagicSquare or
+ * createMagicSquare function based on the argument provided.
+ * 
+ * @param argument_count The `argument_count` parameter represents the number of command-line arguments
+ * passed to the program, including the name of the program itself.
+ * @param argument_vector An array of strings containing the command line arguments passed to the
+ * program. The first element (argument_vector[0]) is the name of the program itself, and the
+ * subsequent elements are the arguments passed to the program.
+ * 
+ * @return The main function is returning an integer value of 0.
+ */
 int main(int argument_count, char *argument_vector[]) {
     int N, i, j;
     int array[MAXN][MAXN];
